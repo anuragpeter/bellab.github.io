@@ -1,0 +1,494 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body
+    {
+        font-family: 'Roboto', sans-serif;
+         
+    }
+/* .navbar-toggler{
+    text-decoration: none;
+    border: none;
+    
+}
+.navbar-toggler-icon{
+    background-color:white;
+}
+.navbar-brand img{
+    width: 15rem;
+    padding: 2rem;
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 8rem;
+    padding-bottom: .7rem 1rem;
+}
+
+.navbar  h6{
+color: rgb(216, 206, 206);
+}
+.navbar span{
+    color: rgb(255, 255, 255);
+font-weight: bolder;
+font-size: large;
+}
+
+nav.navbar .navbar-nav .nav-item .nav-link{
+    padding-right:1rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: rgb(255, 255, 255); 
+    font-size: 1.1rem;
+    
+}
+nav.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: red;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+ .landing{
+     background-color: black;
+     width: 50rem;
+     height: 100px;
+ }
+ .landing{
+    color: black;
+} */
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 77px;
+    background-color: black;
+}
+.logo{
+    height: 8rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-right: 2rem;
+}
+.nav-links a:hover{
+    color: rgb(255, 0, 0);
+    transition: all 0.3s ease-out;
+}
+
+
+
+.cta{
+   
+    text-decoration: none;
+
+}
+.cta{
+    color: rgb(201, 193, 193);
+}
+.cta span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.cta span:hover{
+    color: red;
+    transition: all 0.3s ease-out;
+}
+.slider{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+
+/* sidenav */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ff0000;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 100px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+   background-color: black;
+    color: white;
+    padding: 10px 63px;
+    border: none;
+    float: right;
+    display: none;
+  }
+  
+  
+  .openbtn:hover {
+color: rgb(255, 0, 0);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+.heading{
+    transform: translateY(20%);
+}
+
+.heading h1:hover{
+    color: red;
+    transition: all 0.3s ease-out;
+}
+
+.heading p:hover{
+    color: red;
+    transition: all 0.3s ease-out;
+}
+.heading h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 8rem;
+    text-transform: capitalize;
+    padding: 7rem 0rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+/* textanimation */
+/* .heading{
+    position: relative;
+}
+.heading h1{
+   
+    color: white;
+    font-size: 8rem;
+    padding: 7rem 13rem;
+    
+}
+.heading h1:nth-child(1){
+    position: absolute;
+color: white;
+position: absolute;
+}
+.heading h1:nth-child(2){
+    color: red;
+    transition: all 0.3s ease-out;
+    animation: animate 4s ease-in-out infinite;
+    }
+@keyframes animate{
+    0%,100%  
+    {
+        clip-path: polygon(0% 48%, 5% 46%, 12% 45%, 17% 45%, 24% 45%, 32% 46%, 43% 50%, 52% 53%, 60% 57%, 68% 61%, 74% 62%, 80% 61%, 85% 58%, 91% 58%, 94% 53%, 99% 51%, 100% 48%, 100% 65%, 100% 76%, 100% 93%, 100% 100%, 100% 100%, 92% 100%, 74% 100%, 52% 100%, 30% 100%, 7% 100%, 0% 100%, 0% 98%, 0% 88%, 0% 78%, 0% 71%, 0% 63%, 0% 55%);
+    }
+    50%  
+    {
+        clip-path: polygon(100% 46%, 95% 40%, 87% 37%, 78% 36%, 69% 36%, 58% 36%, 53% 36%, 47% 38%, 38% 40%, 30% 44%, 25% 46%, 21% 48%, 13% 51%, 6% 51%, 1% 50%, 0% 48%, 0% 57%, 0% 65%, 0% 72%, 0% 83%, 0% 92%, 0% 99%, 9% 100%, 25% 100%, 39% 100%, 58% 100%, 75% 100%, 92% 100%, 100% 100%, 100% 87%, 100% 78%, 100% 59%, 100% 46%);
+    }
+}
+   */
+.heading p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: -6rem;
+}
+
+.side-links a:hover{
+    color: red;
+}
+
+.side-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2rem;
+    line-height: 5rem;
+    margin-top: 2rem;
+}
+.side-links a{
+text-transform: capitalize;
+text-decoration:none;
+color: white;
+font-weight: bold;
+}
+
+.srlline{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0 auto;   
+margin-top: -10rem; 
+
+}
+
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    animation: crescendo 1.5s alternate infinite ease-in;
+  }
+  
+  @keyframes crescendo {
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1.5);}
+  }
+
+/* .arrow {
+    position: absolute;
+    width: 100%;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+ } */
+ .down-arrow  {
+    color: white;
+    opacity: .3;
+ }
+ .down-arrow:hover {
+    opacity: .8;
+ }
+ 
+
+.fline{
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+
+.sline{
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+.srltext{
+    color: white;
+    text-transform: capitalize;
+    text-decoration:none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.srltext:hover{
+    color: red;
+    transition: all 0.3s ease-out;
+}
+
+
+.hero{
+    width: 100%;
+    height: 800px;
+    border: solid red 10px;
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 400px){
+    .heading h1{
+        font-size: 2rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .heading p{
+        font-size: 1rem;
+    padding: 0 1px;
+    display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -115px;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .logo{
+        height: 5rem;
+    }
+    .cta{
+        font-size: 10px;
+    }
+    .cta span{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    .openbtn{
+        display: block;
+    }
+}
+
+
+
+@media only screen and (max-width: 1600px){
+    .heading h1{
+        font-size: 6rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .heading p{
+        font-size: 1rem;
+    padding: 0 1px;
+    display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -115px;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .logo{
+        height: 5rem;
+    }
+    .cta{
+        font-size: 10px;
+    }
+    .cta span{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .heading h1{
+        font-size: 5rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .heading p{
+        font-size: 12px;
+    padding: 0 1px;
+    display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -115px;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .logo{
+        height: 5rem;
+    }
+    .cta{
+        font-size: 10px;
+    }
+    .cta span{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+}
+
+@media only screen and (max-width: 1201px){
+    .heading h1{
+        font-size: 4rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+   
+
+}
+
+@media only screen and (max-width: 1041px){
+    .heading h1{
+        font-size: 3rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+   
+
+}
+
+@media only screen and (max-width: 885px){
+ 
+    .heading h1{
+        font-size: 4rem;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+ 
+        
+
+    .heading h1{
+        font-size: 1rem;        
+    }
+    
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
